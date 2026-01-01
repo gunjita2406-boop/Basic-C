@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main(){
+   int size,n,sum=0;
+    float avgArry;
+    
+    printf("enter size of array:\n");
+    scanf("%d",&size);
+    int b[size];
+    printf("enter %d elements of array:\n",size);
+    //array Data Set or inialize array element values..
+    for(int i=0;i<=size-1;i++){
+    scanf("%d",&b[i]);
+    }
+    for(int i=0;i<=size-1;i++){
+      sum+=b[i];
+    }
+  
+    printf("sum=%d",sum);
+    avgArry=sum/size-1;
+    printf("%f",avgArry);
+    return 0;
+    
+}
